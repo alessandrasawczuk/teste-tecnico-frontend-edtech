@@ -13,6 +13,112 @@
   </head>
 
   <body>
+    <header class="hero">
+      <div
+        class="hero__decoration hero__decoration--left"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero__decoration hero__decoration--right"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero__decoration hero__decoration--bottom"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container hero__container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Lorem ipsum <br />
+            dolor, sit <span>amet</span>
+          </h1>
+
+          <p class="hero__description">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+
+          <a class="button button--primary" href="#main-content">
+            Lorem ipsum
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="hero__visual">
+          <div class="browser" aria-label="Ilustração de uma interface digital">
+            <div class="browser__header">
+              <div class="browser__controls" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="browser__address" aria-hidden="true"></div>
+            </div>
+
+            <div class="browser__body">
+              <aside class="browser__sidebar" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <div></div>
+              </aside>
+
+              <div class="browser__main" aria-hidden="true">
+                <div class="browser__chart">
+                  <svg viewBox="0 0 300 100" aria-hidden="true">
+                    <defs>
+                      <linearGradient
+                        id="chartGradient"
+                        x1="0"
+                        y1="0"
+                        x2="0"
+                        y2="1"
+                      >
+                        <stop
+                          offset="0%"
+                          stop-color="#73bf00"
+                          stop-opacity="0.35"
+                        />
+                        <stop
+                          offset="100%"
+                          stop-color="#73bf00"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+
+                    <polygon
+                      points="0,85 35,65 70,76 105,45 140,55 175,25 210,40 245,17 275,30 300,72 300,100 0,100"
+                      fill="url(#chartGradient)"
+                    />
+
+                    <polyline
+                      points="0,85 35,65 70,76 105,45 140,55 175,25 210,40 245,17 275,30 300,72"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    />
+                  </svg>
+                </div>
+
+                <div class="browser__cards">
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- As próximas seções serão adicionadas nas outras issues -->
+    </main>
+
     <main id="app"></main>
 
     <script src="./js/utils/storage.js"></script>
