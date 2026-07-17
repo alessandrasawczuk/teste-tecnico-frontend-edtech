@@ -1,12 +1,23 @@
-# 🧪 Teste Técnico – Desenvolvedor(a) Frontend (EdTech)
+# 🧪 Teste Técnico - Desenvolvedor(a) Front-End (EdTech)
 
-## 🎯 Objetivo
-Implementar integralmente a página disponibilizada no Figma, respeitando layout, interações, estados e comportamentos definidos. 
+Implementação da interface proposta no Figma utilizando apenas HTML5, CSS3 e JavaScript Vanilla.
 
-## 🛠 Requisitos Técnicos Obrigatórios: 
-- HTML5 
-- CSS 
-- JavaScript Vanilla 
-- ❌ Não é permitido utilizar frameworks:
-  - CSS (Bootstrap, Tailwind etc.)
-  - JavaScript (React, Vue, Angular etc.)
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript ES6+
+
+## Como executar
+
+Clone o projeto:
+
+```bash
+git clone ...
+```
+
+Abra o arquivo `index.html` ou utilize uma extensão como Live Server.
+
+## Status
+
+🚧 Em desenvolvimento
