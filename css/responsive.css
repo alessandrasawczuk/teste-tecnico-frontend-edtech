@@ -1,2 +1,85 @@
 @media (max-width: 768px) {
 }
+
+:root {
+  --color-primary: #73bf00;
+  --color-primary-hover: #87d500;
+
+  --color-black: #0c0b0a;
+  --color-dark: #151713;
+  --color-white: #ffffff;
+
+  --color-text-light: #c5c8bf;
+
+  --container-width: 1120px;
+
+  --radius-small: 6px;
+  --radius-medium: 12px;
+
+  --transition-fast: 160ms ease;
+}
+
+@media (max-width: 850px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    padding-block: 70px;
+  }
+
+  .hero__content {
+    max-width: 650px;
+  }
+
+  .browser {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(calc(100% - 28px), var(--container-width));
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero__container {
+    min-height: auto;
+    padding-block: 58px;
+  }
+
+  .hero__title {
+    font-size: 3.2rem;
+  }
+
+  .hero__description {
+    font-size: 0.95rem;
+  }
+
+  .browser__body {
+    grid-template-columns: 60px 1fr;
+  }
+
+  .browser__sidebar {
+    min-height: 230px;
+  }
+
+  .browser__sidebar span {
+    width: 35px;
+  }
+
+  .browser__sidebar div {
+    width: 35px;
+    margin-top: 125px;
+  }
+
+  .browser__cards div {
+    min-height: 110px;
+  }
+
+  .hero__decoration--right {
+    right: -50px;
+  }
+}
