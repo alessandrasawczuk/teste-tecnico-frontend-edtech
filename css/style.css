@@ -322,7 +322,7 @@ body {
   line-height: 1.6;
 }
 
-/* ====================== Player de vídeo responsivo ====================== */
+/* ====================== PLAYER DE VÍDEO REPSONSIVO ====================== */
 
 .video-player {
   width: 100%;
@@ -346,7 +346,7 @@ body {
   border: 0;
 }
 
-/* ====================== Card com imagem lateral ====================== */
+/* ====================== CARD COM IMAGEM LATERAL ====================== */
 .content-card {
   display: grid;
   grid-template-columns: 1.05fr 1fr;
@@ -387,3 +387,138 @@ body {
   font-size: 0.92rem;
   line-height: 1.65;
 }
+
+/* ====================== SLIDER ====================== */
+.slider {
+  margin-top: 48px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  background-color: var(--color-white);
+
+  box-shadow: var(--shadow-card);
+}
+
+.slider__viewport {
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+
+  transition: transform 400ms ease;
+}
+
+.slider__slide {
+  flex: 0 0 100%;
+
+  margin: 0;
+}
+
+.slider__slide img {
+  width: 100%;
+  height: 470px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.slider__controls {
+  min-height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.slider__button {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+
+  color: var(--color-text);
+  background-color: var(--color-white);
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.slider__button:hover:not(:disabled) {
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+
+  transform: translateY(-2px);
+}
+
+.slider__button--next {
+  color: var(--color-white);
+  background-color: #202532;
+}
+
+.slider__button:disabled {
+  color: #aeb3ba;
+  border-color: #e5e7ea;
+  background-color: #f6f7f8;
+
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.slider__button:focus-visible,
+.slider__indicator:focus-visible {
+  outline: 3px solid rgba(115, 191, 0, 0.4);
+  outline-offset: 3px;
+}
+
+.slider__indicators {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider__indicator {
+  width: 10px;
+  height: 10px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: #dfe3e8;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.slider__indicator:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.15);
+}
+
+.slider__indicator.is-active {
+  background-color: #202532;
+}
+
+/* ====================== FFF ====================== */

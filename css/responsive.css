@@ -10,6 +10,10 @@
   .content-card__image img {
     height: 280px;
   }
+
+  .slider__slide img {
+    height: 360px;
+  }
 }
 
 :root {
@@ -111,5 +115,22 @@
 
   .content-card__image img {
     height: 210px;
+  }
+
+  .slider {
+    margin-top: 36px;
+  }
+
+  .slider__slide img {
+    height: 260px;
+  }
+
+  .slider__controls {
+    min-height: 64px;
+  }
+
+  .slider__button {
+    width: 36px;
+    height: 36px;
   }
 }

@@ -170,14 +170,64 @@
               </p>
             </div>
           </article>
+
+          <section class="slider" aria-label="Galeria de imagens">
+            <div class="slider__viewport">
+              <div class="slider__track" id="slider-track">
+                <figure class="slider__slide">
+                  <img
+                    src="./assets/images/forest-road.jpg"
+                    alt="Estrada cercada por árvores"
+                  />
+                </figure>
+
+                <figure class="slider__slide">
+                  <img
+                    src="./assets/images/forested-mountains.jpg"
+                    alt="Montanhas próximas da floresta"
+                  />
+                </figure>
+
+                <figure class="slider__slide">
+                  <img
+                    src="./assets/images/misty-mountains.jpg"
+                    alt="Montanha com neblina"
+                  />
+                </figure>
+              </div>
+            </div>
+
+            <div class="slider__controls">
+              <button
+                class="slider__button slider__button--previous"
+                id="slider-previous"
+                type="button"
+                aria-label="Exibir imagem anterior"
+              >
+                ‹
+              </button>
+
+              <div
+                class="slider__indicators"
+                id="slider-indicators"
+                aria-label="Selecionar imagem"
+              ></div>
+
+              <button
+                class="slider__button slider__button--next"
+                id="slider-next"
+                type="button"
+                aria-label="Exibir próxima imagem"
+              >
+                ›
+              </button>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
-    <script src="./js/utils/storage.js"></script>
     <script src="./js/components/slider.js"></script>
-    <script src="./js/components/cards.js"></script>
-    <script src="./js/components/accordion.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
