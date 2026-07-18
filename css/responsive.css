@@ -14,6 +14,19 @@
   .slider__slide img {
     height: 360px;
   }
+
+  .expandable-cards {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .expandable-card {
+    min-height: 220px;
+  }
+
+  .expandable-card.is-open {
+    transform: none;
+  }
 }
 
 :root {
@@ -132,5 +145,14 @@
   .slider__button {
     width: 36px;
     height: 36px;
+  }
+
+  .expandable-cards-section {
+    padding: 32px 0 48px;
+  }
+
+  .expandable-card {
+    min-height: 200px;
+    padding: 28px 22px 22px;
   }
 }

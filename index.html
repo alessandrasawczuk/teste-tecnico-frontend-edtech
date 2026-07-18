@@ -223,11 +223,109 @@
               </button>
             </div>
           </section>
+
+          <section class="expandable-cards-section">
+            <div class="container expandable-cards-section__container">
+              <div
+                class="expandable-cards"
+                data-expandable-cards
+                aria-label="Conteúdos complementares"
+              >
+                <article class="expandable-card">
+                  <div class="expandable-card__closed-content">
+                    <span class="expandable-card__icon" aria-hidden="true"
+                      >?</span
+                    >
+                  </div>
+
+                  <div
+                    class="expandable-card__open-content"
+                    id="expandable-card-content-1"
+                    hidden
+                  >
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe excepturi, dolores perspiciatis commodi eum dolore
+                      nesciunt tempore similique at quas.
+                    </p>
+                  </div>
+
+                  <button
+                    class="expandable-card__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="expandable-card-content-1"
+                  >
+                    Abrir
+                  </button>
+                </article>
+
+                <article class="expandable-card">
+                  <div class="expandable-card__closed-content">
+                    <span class="expandable-card__icon" aria-hidden="true"
+                      >?</span
+                    >
+                  </div>
+
+                  <div
+                    class="expandable-card__open-content"
+                    id="expandable-card-content-2"
+                    hidden
+                  >
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe excepturi, dolores perspiciatis commodi eum dolore
+                      nesciunt tempore similique at quas.
+                    </p>
+                  </div>
+
+                  <button
+                    class="expandable-card__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="expandable-card-content-2"
+                  >
+                    Fechar
+                  </button>
+                </article>
+
+                <article class="expandable-card">
+                  <div class="expandable-card__closed-content">
+                    <span class="expandable-card__icon" aria-hidden="true"
+                      >?</span
+                    >
+                  </div>
+
+                  <div
+                    class="expandable-card__open-content"
+                    id="expandable-card-content-3"
+                    hidden
+                  >
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Saepe excepturi, dolores perspiciatis commodi eum dolore
+                      nesciunt tempore similique at quas.
+                    </p>
+                  </div>
+
+                  <button
+                    class="expandable-card__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="expandable-card-content-3"
+                  >
+                    Abrir
+                  </button>
+                </article>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
     <script src="./js/components/slider.js"></script>
+    <script src="./js/components/cards.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
