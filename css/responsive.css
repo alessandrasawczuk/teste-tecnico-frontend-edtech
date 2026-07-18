@@ -1,4 +1,15 @@
 @media (max-width: 768px) {
+  .content-section {
+    padding-block: 56px 64px;
+  }
+
+  .content-card {
+    grid-template-columns: 1fr;
+  }
+
+  .content-card__image img {
+    height: 280px;
+  }
 }
 
 :root {
@@ -81,5 +92,24 @@
 
   .hero__decoration--right {
     right: -50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-heading {
+    margin-bottom: 28px;
+  }
+
+  .section-heading__title {
+    font-size: 1.75rem;
+  }
+
+  .content-card {
+    gap: 22px;
+    padding: 20px;
+  }
+
+  .content-card__image img {
+    height: 210px;
   }
 }
