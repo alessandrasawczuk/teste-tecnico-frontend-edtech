@@ -27,6 +27,18 @@
   .expandable-card.is-open {
     transform: none;
   }
+
+  .audio-player {
+    grid-template-columns: auto minmax(100px, 1fr) auto auto;
+  }
+
+  .audio-player__volume-wrapper {
+    display: none;
+  }
+
+  .audio-player__settings-button {
+    display: none;
+  }
 }
 
 :root {
@@ -154,5 +166,34 @@
   .expandable-card {
     min-height: 200px;
     padding: 28px 22px 22px;
+  }
+
+  .audio-section {
+    padding: 24px 0 56px;
+  }
+
+  .audio-player {
+    padding: 10px 12px;
+
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+  }
+
+  .audio-player__time {
+    grid-column: 2 / 3;
+
+    justify-self: end;
+
+    font-size: 0.625rem;
+  }
+
+  .audio-player__mute-button {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .audio-player__progress-wrapper {
+    grid-column: 2;
+    grid-row: 1;
   }
 }

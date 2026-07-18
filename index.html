@@ -320,12 +320,97 @@
               </div>
             </div>
           </section>
+
+          <section class="audio-section">
+            <div class="container audio-section__container">
+              <header class="section-heading section-heading--audio">
+                <h2 class="section-heading__title">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit
+                </h2>
+
+                <p class="section-heading__description">
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+              </header>
+
+              <div class="audio-player" data-audio-player>
+                <audio
+                  class="audio-player__audio"
+                  src="./assets/audio/audio.mpeg"
+                  preload="metadata"
+                ></audio>
+
+                <button
+                  class="audio-player__play-button"
+                  type="button"
+                  aria-label="Reproduzir áudio"
+                >
+                  <span class="audio-player__play-icon" aria-hidden="true"
+                    >▶</span
+                  >
+                </button>
+
+                <label class="audio-player__progress-wrapper">
+                  <span class="sr-only">Progresso do áudio</span>
+
+                  <input
+                    class="audio-player__progress"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="0.1"
+                    value="0"
+                    aria-label="Progresso do áudio"
+                  />
+                </label>
+
+                <span class="audio-player__time">
+                  <span class="audio-player__current-time">00:00</span>
+                  <span aria-hidden="true">/</span>
+                  <span class="audio-player__duration">00:00</span>
+                </span>
+
+                <button
+                  class="audio-player__mute-button"
+                  type="button"
+                  aria-label="Silenciar áudio"
+                >
+                  <span aria-hidden="true">🔊</span>
+                </button>
+
+                <label class="audio-player__volume-wrapper">
+                  <span class="sr-only">Volume do áudio</span>
+
+                  <input
+                    class="audio-player__volume"
+                    type="range"
+                    min="0"
+                    max="1"
+                    step="0.01"
+                    value="1"
+                    aria-label="Volume do áudio"
+                  />
+                </label>
+
+                <button
+                  class="audio-player__settings-button"
+                  type="button"
+                  aria-label="Configurações do áudio"
+                  disabled
+                >
+                  <span aria-hidden="true">⚙</span>
+                </button>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
     <script src="./js/components/slider.js"></script>
     <script src="./js/components/cards.js"></script>
+    <script src="./js/components/audio-player.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
