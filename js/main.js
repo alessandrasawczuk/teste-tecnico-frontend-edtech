@@ -4,4 +4,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initAudioPlayer();
   initDiscursiveActivity();
   initObjectiveActivity();
+  initAccordion();
 });

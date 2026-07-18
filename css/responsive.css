@@ -55,6 +55,34 @@
   .objective-option {
     align-items: flex-start;
   }
+
+  .faq-section {
+    padding: 56px 0 72px;
+  }
+
+  .faq-section__header {
+    margin-bottom: 40px;
+  }
+
+  .accordion {
+    gap: 14px;
+  }
+
+  .accordion__button {
+    min-height: 76px;
+    padding: 22px;
+    gap: 18px;
+  }
+
+  .accordion__question {
+    font-size: 0.98rem;
+  }
+
+  .accordion__content p {
+    padding: 18px 22px 24px;
+
+    font-size: 0.93rem;
+  }
 }
 
 :root {
@@ -295,5 +323,37 @@
   .objective-activity__feedback {
     padding: 18px;
     gap: 10px;
+  }
+
+  .faq-section {
+    padding: 48px 0 60px;
+  }
+
+  .faq-section__title {
+    font-size: 2rem;
+  }
+
+  .faq-section__description {
+    font-size: 0.9rem;
+  }
+
+  .accordion__item {
+    border-radius: 10px;
+  }
+
+  .accordion__button {
+    min-height: 70px;
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .accordion__question {
+    font-size: 0.9rem;
+  }
+
+  .accordion__content p {
+    padding: 16px 18px 20px;
+
+    font-size: 0.875rem;
   }
 }
