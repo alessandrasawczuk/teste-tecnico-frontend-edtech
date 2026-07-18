@@ -519,6 +519,156 @@
               </article>
             </div>
           </section>
+
+          <section class="objective-section">
+            <div class="container">
+              <article
+                class="objective-activity"
+                data-objective-activity
+                aria-labelledby="objective-title"
+              >
+                <header class="objective-activity__header">
+                  <div class="objective-activity__icon" aria-hidden="true">
+                    ?
+                  </div>
+
+                  <div class="objective-activity__heading">
+                    <h2 class="objective-activity__title" id="objective-title">
+                      Atividade Objetiva
+                    </h2>
+
+                    <p class="objective-activity__description">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page.
+                    </p>
+                  </div>
+                </header>
+
+                <fieldset class="objective-activity__options">
+                  <legend class="sr-only">Selecione uma alternativa</legend>
+
+                  <label class="objective-option">
+                    <input
+                      class="objective-option__input"
+                      type="radio"
+                      name="objective-answer"
+                      value="a"
+                    />
+
+                    <span
+                      class="objective-option__checkbox"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span class="objective-option__text">
+                      A) Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+                  </label>
+
+                  <label class="objective-option">
+                    <input
+                      class="objective-option__input"
+                      type="radio"
+                      name="objective-answer"
+                      value="b"
+                    />
+
+                    <span
+                      class="objective-option__checkbox"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span class="objective-option__text">
+                      B) Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+                  </label>
+
+                  <label class="objective-option">
+                    <input
+                      class="objective-option__input"
+                      type="radio"
+                      name="objective-answer"
+                      value="c"
+                    />
+
+                    <span
+                      class="objective-option__checkbox"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span class="objective-option__text">
+                      C) Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+                  </label>
+
+                  <label class="objective-option">
+                    <input
+                      class="objective-option__input"
+                      type="radio"
+                      name="objective-answer"
+                      value="d"
+                    />
+
+                    <span
+                      class="objective-option__checkbox"
+                      aria-hidden="true"
+                    ></span>
+
+                    <span class="objective-option__text">
+                      D) Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+                  </label>
+                </fieldset>
+
+                <div class="objective-activity__actions">
+                  <button
+                    class="objective-activity__button objective-activity__button--submit"
+                    type="button"
+                    data-objective-submit
+                    disabled
+                  >
+                    Responder
+                  </button>
+
+                  <button
+                    class="objective-activity__button objective-activity__button--edit"
+                    type="button"
+                    data-objective-edit
+                    disabled
+                  >
+                    Alterar
+                  </button>
+                </div>
+
+                <div
+                  class="objective-activity__feedback"
+                  data-objective-feedback
+                  role="status"
+                  aria-live="polite"
+                  hidden
+                >
+                  <div class="objective-activity__feedback-content">
+                    <strong data-objective-feedback-title></strong>
+
+                    <p data-objective-feedback-message></p>
+                  </div>
+
+                  <button
+                    class="objective-activity__feedback-close"
+                    type="button"
+                    data-objective-feedback-close
+                    aria-label="Fechar mensagem de feedback"
+                  >
+                    ×
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
     </main>
@@ -529,6 +679,7 @@
     <script src="./js/components/cards.js"></script>
     <script src="./js/components/audio-player.js"></script>
     <script src="./js/components/discursive-activity.js"></script>
+    <script src="./js/components/objective-activity.js"></script>
 
     <script src="./js/main.js"></script>
   </body>

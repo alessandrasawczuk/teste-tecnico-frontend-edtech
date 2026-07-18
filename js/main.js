@@ -3,4 +3,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initExpandableCards();
   initAudioPlayer();
   initDiscursiveActivity();
+  initObjectiveActivity();
 });

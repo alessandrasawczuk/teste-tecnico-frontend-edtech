@@ -47,6 +47,14 @@
   .discursive-activity__textarea {
     min-height: 150px;
   }
+
+  .objective-activity {
+    padding: 28px 24px;
+  }
+
+  .objective-option {
+    align-items: flex-start;
+  }
 }
 
 :root {
@@ -240,6 +248,52 @@
   }
 
   .discursive-activity__feedback {
+    gap: 10px;
+  }
+
+  .objective-section {
+    padding-bottom: 56px;
+  }
+
+  .objective-activity {
+    padding: 24px 18px;
+  }
+
+  .objective-activity__header {
+    gap: 12px;
+  }
+
+  .objective-activity__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .objective-activity__title {
+    font-size: 1rem;
+  }
+
+  .objective-activity__description,
+  .objective-option__text {
+    font-size: 0.875rem;
+  }
+
+  .objective-option {
+    min-height: 58px;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .objective-activity__actions {
+    align-items: stretch;
+  }
+
+  .objective-activity__button {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .objective-activity__feedback {
+    padding: 18px;
     gap: 10px;
   }
 }
