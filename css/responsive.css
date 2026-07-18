@@ -83,6 +83,25 @@
 
     font-size: 0.93rem;
   }
+
+  .footer {
+    padding: 36px 0;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer__logo img {
+    width: 120px;
+  }
+
+  .content-highlight {
+    margin: 48px auto 56px;
+    padding: 28px;
+  }
 }
 
 :root {
@@ -355,5 +374,13 @@
     padding: 16px 18px 20px;
 
     font-size: 0.875rem;
+  }
+
+  .content-highlight {
+    padding: 24px 20px;
+  }
+
+  .content-highlight p {
+    font-size: 0.9rem;
   }
 }
