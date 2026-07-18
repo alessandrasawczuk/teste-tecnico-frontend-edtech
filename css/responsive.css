@@ -39,6 +39,14 @@
   .audio-player__settings-button {
     display: none;
   }
+
+  .discursive-activity {
+    padding: 28px 24px;
+  }
+
+  .discursive-activity__textarea {
+    min-height: 150px;
+  }
 }
 
 :root {
@@ -195,5 +203,43 @@
   .audio-player__progress-wrapper {
     grid-column: 2;
     grid-row: 1;
+  }
+
+  .discursive-section {
+    padding: 32px 0 56px;
+  }
+
+  .discursive-activity {
+    padding: 24px 18px;
+  }
+
+  .discursive-activity__header {
+    gap: 12px;
+  }
+
+  .discursive-activity__icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .discursive-activity__title {
+    font-size: 1rem;
+  }
+
+  .discursive-activity__description {
+    font-size: 0.875rem;
+  }
+
+  .discursive-activity__actions {
+    align-items: stretch;
+  }
+
+  .discursive-activity__button {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .discursive-activity__feedback {
+    gap: 10px;
   }
 }

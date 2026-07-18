@@ -404,13 +404,132 @@
               </div>
             </div>
           </section>
+
+          <section class="discursive-section">
+            <div class="container">
+              <article
+                class="discursive-activity"
+                data-discursive-activity
+                aria-labelledby="discursive-title"
+              >
+                <header class="discursive-activity__header">
+                  <div class="discursive-activity__icon" aria-hidden="true">
+                    ≡✎
+                  </div>
+
+                  <div class="discursive-activity__heading">
+                    <h2
+                      class="discursive-activity__title"
+                      id="discursive-title"
+                    >
+                      Atividade discursiva
+                    </h2>
+
+                    <p class="discursive-activity__description">
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout.
+                    </p>
+                  </div>
+                </header>
+
+                <div class="discursive-activity__field">
+                  <label class="sr-only" for="discursive-answer">
+                    Digite sua resposta
+                  </label>
+
+                  <textarea
+                    class="discursive-activity__textarea"
+                    id="discursive-answer"
+                    name="discursive-answer"
+                    rows="7"
+                    maxlength="1000"
+                    placeholder="Digite sua resposta aqui..."
+                    aria-describedby="discursive-status"
+                  ></textarea>
+
+                  <div class="discursive-activity__field-footer">
+                    <span
+                      class="discursive-activity__counter"
+                      data-answer-counter
+                      aria-live="polite"
+                    >
+                      0/1000
+                    </span>
+
+                    <span
+                      class="discursive-activity__error"
+                      data-answer-error
+                      role="alert"
+                      hidden
+                    >
+                      Digite uma resposta antes de continuar.
+                    </span>
+                  </div>
+                </div>
+
+                <div class="discursive-activity__actions">
+                  <button
+                    class="discursive-activity__button discursive-activity__button--submit"
+                    type="button"
+                    data-answer-submit
+                    disabled
+                  >
+                    Responder
+                  </button>
+
+                  <button
+                    class="discursive-activity__button discursive-activity__button--edit"
+                    type="button"
+                    data-answer-edit
+                    disabled
+                  >
+                    Alterar
+                  </button>
+                </div>
+
+                <div
+                  class="discursive-activity__feedback"
+                  id="discursive-status"
+                  data-answer-feedback
+                  role="status"
+                  aria-live="polite"
+                  hidden
+                >
+                  <div class="discursive-activity__feedback-content">
+                    <strong>É isso aí!</strong>
+
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Pariatur commodi odio maiores accusamus aspernatur
+                      consequatur ipsam dignissimos magnam hic, velit est
+                      perferendis explicabo aperiam ratione veritatis labore.
+                    </p>
+                  </div>
+
+                  <button
+                    class="discursive-activity__feedback-close"
+                    type="button"
+                    data-feedback-close
+                    aria-label="Fechar mensagem de confirmação"
+                  >
+                    ×
+                  </button>
+                </div>
+              </article>
+            </div>
+          </section>
         </div>
       </section>
     </main>
 
+    <script src="./js/utils/storage.js"></script>
+
     <script src="./js/components/slider.js"></script>
     <script src="./js/components/cards.js"></script>
     <script src="./js/components/audio-player.js"></script>
+    <script src="./js/components/discursive-activity.js"></script>
+
     <script src="./js/main.js"></script>
   </body>
 </html>
