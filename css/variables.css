@@ -8,4 +8,11 @@
   --gray-600: #666666;
 
   --radius: 8px;
+
+  --color-text: #171a15;
+  --color-text-muted: #747a70;
+  --color-border: #e5e8e2;
+  --color-surface-soft: #f7f8f6;
+
+  --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
