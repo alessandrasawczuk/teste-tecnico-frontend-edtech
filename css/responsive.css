@@ -122,12 +122,33 @@
   --transition-fast: 160ms ease;
 }
 
+@media (max-width: 1500px) {
+  .hero__container {
+    width: min(calc(100% - 64px), 1180px);
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 0.9fr);
+    gap: clamp(40px, 5vw, 72px);
+  }
+
+  .hero__content {
+    max-width: 580px;
+  }
+
+  .hero__title {
+    font-size: clamp(3.4rem, 5vw, 4.8rem);
+  }
+
+  .browser {
+    width: min(100%, 540px);
+  }
+}
+
 @media (max-width: 850px) {
   .hero__container {
     grid-template-columns: 1fr;
-    gap: 50px;
+    align-content: center;
+    gap: clamp(32px, 6vh, 50px);
 
-    padding-block: 70px;
+    padding-block: clamp(48px, 7vh, 70px);
   }
 
   .hero__content {
@@ -139,47 +160,85 @@
   }
 }
 
+@media (max-width: 900px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 36px;
+    padding-block: 48px;
+  }
+
+  .hero__content {
+    max-width: 650px;
+  }
+
+  .browser {
+    width: min(100%, 520px);
+    margin-inline: auto;
+  }
+}
+
 @media (max-width: 600px) {
   .container {
-    width: min(calc(100% - 28px), var(--container-width));
+    width: min(calc(100% - 32px), var(--container-width));
   }
 
   .hero {
-    min-height: auto;
+    min-height: 100vh;
+    min-height: 100svh;
   }
 
   .hero__container {
-    min-height: auto;
-    padding-block: 58px;
+    width: min(calc(100% - 32px), 480px);
+    min-height: 100vh;
+    min-height: 100svh;
+
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: clamp(28px, 5vh, 40px);
+
+    padding: 32px 0;
+  }
+
+  .hero__content {
+    max-width: none;
   }
 
   .hero__title {
-    font-size: 3.2rem;
+    font-size: clamp(2.35rem, 11vw, 3.2rem);
+    line-height: 0.95;
   }
 
   .hero__description {
+    margin: 18px 0 22px;
     font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .browser {
+    width: 100%;
+    padding: 12px;
   }
 
   .browser__body {
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 52px 1fr;
   }
 
   .browser__sidebar {
-    min-height: 230px;
+    min-height: 190px;
   }
 
   .browser__sidebar span {
-    width: 35px;
+    width: 30px;
   }
 
   .browser__sidebar div {
-    width: 35px;
-    margin-top: 125px;
+    width: 30px;
+    margin-top: 100px;
   }
 
   .browser__cards div {
-    min-height: 110px;
+    min-height: 90px;
   }
 
   .hero__decoration--right {
@@ -382,5 +441,24 @@
 
   .content-highlight p {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 850px) and (max-height: 700px) {
+  .hero__container {
+    gap: 24px;
+    padding-block: 32px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.4rem, 9vw, 3.4rem);
+  }
+
+  .hero__description {
+    margin-block: 16px;
+  }
+
+  .browser {
+    max-width: 420px;
   }
 }

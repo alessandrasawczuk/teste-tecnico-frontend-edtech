@@ -56,7 +56,6 @@ function initSlider() {
 
       if (isCurrent) {
         indicator.setAttribute("aria-current", "true");
-        indicator.focus();
       } else {
         indicator.removeAttribute("aria-current");
       }

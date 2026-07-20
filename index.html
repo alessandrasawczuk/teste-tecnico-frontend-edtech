@@ -29,7 +29,7 @@
         aria-hidden="true"
       ></div>
 
-      <div class="container hero__container">
+      <div class="hero__container">
         <div class="hero__content">
           <h1 class="hero__title">
             Lorem ipsum <br />
@@ -237,7 +237,7 @@
           </section>
 
           <section class="expandable-cards-section">
-            <div class="container expandable-cards-section__container">
+            <div class="expandable-cards-section__container">
               <div
                 class="expandable-cards"
                 data-expandable-cards
@@ -334,7 +334,7 @@
           </section>
 
           <section class="audio-section">
-            <div class="container audio-section__container">
+            <div class="audio-section__container">
               <header class="section-heading section-heading--audio">
                 <h2 class="section-heading__title">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit
@@ -418,488 +418,477 @@
           </section>
 
           <section class="discursive-section">
-            <div class="container">
-              <article
-                class="discursive-activity"
-                data-discursive-activity
-                aria-labelledby="discursive-title"
-              >
-                <header class="discursive-activity__header">
-                  <div class="discursive-activity__icon" aria-hidden="true">
-                    ≡✎
-                  </div>
-
-                  <div class="discursive-activity__heading">
-                    <h2
-                      class="discursive-activity__title"
-                      id="discursive-title"
-                    >
-                      Atividade discursiva
-                    </h2>
-
-                    <p class="discursive-activity__description">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page when looking
-                      at its layout.
-                    </p>
-                  </div>
-                </header>
-
-                <div class="discursive-activity__field">
-                  <label class="sr-only" for="discursive-answer">
-                    Digite sua resposta
-                  </label>
-
-                  <textarea
-                    class="discursive-activity__textarea"
-                    id="discursive-answer"
-                    name="discursive-answer"
-                    rows="7"
-                    maxlength="1000"
-                    placeholder="Digite sua resposta aqui..."
-                    aria-describedby="discursive-status"
-                  ></textarea>
-
-                  <div class="discursive-activity__field-footer">
-                    <span
-                      class="discursive-activity__counter"
-                      data-answer-counter
-                      aria-live="polite"
-                    >
-                      0/1000
-                    </span>
-
-                    <span
-                      class="discursive-activity__error"
-                      data-answer-error
-                      role="alert"
-                      hidden
-                    >
-                      Digite uma resposta antes de continuar.
-                    </span>
-                  </div>
+            <article
+              class="discursive-activity"
+              data-discursive-activity
+              aria-labelledby="discursive-title"
+            >
+              <header class="discursive-activity__header">
+                <div class="discursive-activity__icon" aria-hidden="true">
+                  ≡✎
                 </div>
 
-                <div class="discursive-activity__actions">
-                  <button
-                    class="discursive-activity__button discursive-activity__button--submit"
-                    type="button"
-                    data-answer-submit
-                    disabled
-                  >
-                    Responder
-                  </button>
+                <div class="discursive-activity__heading">
+                  <h2 class="discursive-activity__title" id="discursive-title">
+                    Atividade discursiva
+                  </h2>
 
-                  <button
-                    class="discursive-activity__button discursive-activity__button--edit"
-                    type="button"
-                    data-answer-edit
-                    disabled
-                  >
-                    Alterar
-                  </button>
+                  <p class="discursive-activity__description">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout.
+                  </p>
                 </div>
+              </header>
 
-                <div
-                  class="discursive-activity__feedback"
-                  id="discursive-status"
-                  data-answer-feedback
-                  role="status"
-                  aria-live="polite"
-                  hidden
+              <div class="discursive-activity__field">
+                <label class="sr-only" for="discursive-answer">
+                  Digite sua resposta
+                </label>
+
+                <textarea
+                  class="discursive-activity__textarea"
+                  id="discursive-answer"
+                  name="discursive-answer"
+                  rows="7"
+                  maxlength="1000"
+                  placeholder="Digite sua resposta aqui..."
+                  aria-describedby="discursive-status"
+                ></textarea>
+
+                <div class="discursive-activity__field-footer">
+                  <span
+                    class="discursive-activity__counter"
+                    data-answer-counter
+                    aria-live="polite"
+                  >
+                    0/1000
+                  </span>
+
+                  <span
+                    class="discursive-activity__error"
+                    data-answer-error
+                    role="alert"
+                    hidden
+                  >
+                    Digite uma resposta antes de continuar.
+                  </span>
+                </div>
+              </div>
+
+              <div class="discursive-activity__actions">
+                <button
+                  class="discursive-activity__button discursive-activity__button--submit"
+                  type="button"
+                  data-answer-submit
+                  disabled
                 >
-                  <div class="discursive-activity__feedback-content">
-                    <strong>É isso aí!</strong>
+                  Responder
+                </button>
 
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Pariatur commodi odio maiores accusamus aspernatur
-                      consequatur ipsam dignissimos magnam hic, velit est
-                      perferendis explicabo aperiam ratione veritatis labore.
-                    </p>
-                  </div>
+                <button
+                  class="discursive-activity__button discursive-activity__button--edit"
+                  type="button"
+                  data-answer-edit
+                  disabled
+                >
+                  Alterar
+                </button>
+              </div>
 
-                  <button
-                    class="discursive-activity__feedback-close"
-                    type="button"
-                    data-feedback-close
-                    aria-label="Fechar mensagem de confirmação"
-                  >
-                    ×
-                  </button>
+              <div
+                class="discursive-activity__feedback"
+                id="discursive-status"
+                data-answer-feedback
+                role="status"
+                aria-live="polite"
+                hidden
+              >
+                <div class="discursive-activity__feedback-content">
+                  <strong>É isso aí!</strong>
+
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Pariatur commodi odio maiores accusamus aspernatur
+                    consequatur ipsam dignissimos magnam hic, velit est
+                    perferendis explicabo aperiam ratione veritatis labore.
+                  </p>
                 </div>
-              </article>
-            </div>
+
+                <button
+                  class="discursive-activity__feedback-close"
+                  type="button"
+                  data-feedback-close
+                  aria-label="Fechar mensagem de confirmação"
+                >
+                  ×
+                </button>
+              </div>
+            </article>
           </section>
 
           <section class="objective-section">
-            <div class="container">
-              <article
-                class="objective-activity"
-                data-objective-activity
-                aria-labelledby="objective-title"
-              >
-                <header class="objective-activity__header">
-                  <div class="objective-activity__icon" aria-hidden="true">
-                    ?
-                  </div>
+            <article
+              class="objective-activity"
+              data-objective-activity
+              aria-labelledby="objective-title"
+            >
+              <header class="objective-activity__header">
+                <div class="objective-activity__icon" aria-hidden="true">?</div>
 
-                  <div class="objective-activity__heading">
-                    <h2 class="objective-activity__title" id="objective-title">
-                      Atividade Objetiva
-                    </h2>
+                <div class="objective-activity__heading">
+                  <h2 class="objective-activity__title" id="objective-title">
+                    Atividade Objetiva
+                  </h2>
 
-                    <p class="objective-activity__description">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content of a page.
-                    </p>
-                  </div>
-                </header>
-
-                <fieldset class="objective-activity__options">
-                  <legend class="sr-only">Selecione uma alternativa</legend>
-
-                  <label class="objective-option">
-                    <input
-                      class="objective-option__input"
-                      type="radio"
-                      name="objective-answer"
-                      value="a"
-                    />
-
-                    <span
-                      class="objective-option__checkbox"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span class="objective-option__text">
-                      A) Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </span>
-                  </label>
-
-                  <label class="objective-option">
-                    <input
-                      class="objective-option__input"
-                      type="radio"
-                      name="objective-answer"
-                      value="b"
-                    />
-
-                    <span
-                      class="objective-option__checkbox"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span class="objective-option__text">
-                      B) Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </span>
-                  </label>
-
-                  <label class="objective-option">
-                    <input
-                      class="objective-option__input"
-                      type="radio"
-                      name="objective-answer"
-                      value="c"
-                    />
-
-                    <span
-                      class="objective-option__checkbox"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span class="objective-option__text">
-                      C) Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </span>
-                  </label>
-
-                  <label class="objective-option">
-                    <input
-                      class="objective-option__input"
-                      type="radio"
-                      name="objective-answer"
-                      value="d"
-                    />
-
-                    <span
-                      class="objective-option__checkbox"
-                      aria-hidden="true"
-                    ></span>
-
-                    <span class="objective-option__text">
-                      D) Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry.
-                    </span>
-                  </label>
-                </fieldset>
-
-                <div class="objective-activity__actions">
-                  <button
-                    class="objective-activity__button objective-activity__button--submit"
-                    type="button"
-                    data-objective-submit
-                    disabled
-                  >
-                    Responder
-                  </button>
-
-                  <button
-                    class="objective-activity__button objective-activity__button--edit"
-                    type="button"
-                    data-objective-edit
-                    disabled
-                  >
-                    Alterar
-                  </button>
+                  <p class="objective-activity__description">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page.
+                  </p>
                 </div>
+              </header>
 
-                <div
-                  class="objective-activity__feedback"
-                  data-objective-feedback
-                  role="status"
-                  aria-live="polite"
-                  hidden
+              <fieldset class="objective-activity__options">
+                <legend class="sr-only">Selecione uma alternativa</legend>
+
+                <label class="objective-option">
+                  <input
+                    class="objective-option__input"
+                    type="radio"
+                    name="objective-answer"
+                    value="a"
+                  />
+
+                  <span
+                    class="objective-option__checkbox"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span class="objective-option__text">
+                    A) Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </span>
+                </label>
+
+                <label class="objective-option">
+                  <input
+                    class="objective-option__input"
+                    type="radio"
+                    name="objective-answer"
+                    value="b"
+                  />
+
+                  <span
+                    class="objective-option__checkbox"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span class="objective-option__text">
+                    B) Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </span>
+                </label>
+
+                <label class="objective-option">
+                  <input
+                    class="objective-option__input"
+                    type="radio"
+                    name="objective-answer"
+                    value="c"
+                  />
+
+                  <span
+                    class="objective-option__checkbox"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span class="objective-option__text">
+                    C) Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </span>
+                </label>
+
+                <label class="objective-option">
+                  <input
+                    class="objective-option__input"
+                    type="radio"
+                    name="objective-answer"
+                    value="d"
+                  />
+
+                  <span
+                    class="objective-option__checkbox"
+                    aria-hidden="true"
+                  ></span>
+
+                  <span class="objective-option__text">
+                    D) Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </span>
+                </label>
+              </fieldset>
+
+              <div class="objective-activity__actions">
+                <button
+                  class="objective-activity__button objective-activity__button--submit"
+                  type="button"
+                  data-objective-submit
+                  disabled
                 >
-                  <div class="objective-activity__feedback-content">
-                    <strong data-objective-feedback-title></strong>
+                  Responder
+                </button>
 
-                    <p data-objective-feedback-message></p>
-                  </div>
+                <button
+                  class="objective-activity__button objective-activity__button--edit"
+                  type="button"
+                  data-objective-edit
+                  disabled
+                >
+                  Alterar
+                </button>
+              </div>
 
-                  <button
-                    class="objective-activity__feedback-close"
-                    type="button"
-                    data-objective-feedback-close
-                    aria-label="Fechar mensagem de feedback"
-                  >
-                    ×
-                  </button>
+              <div
+                class="objective-activity__feedback"
+                data-objective-feedback
+                role="status"
+                aria-live="polite"
+                hidden
+              >
+                <div class="objective-activity__feedback-content">
+                  <strong data-objective-feedback-title></strong>
+
+                  <p data-objective-feedback-message></p>
                 </div>
-              </article>
-            </div>
+
+                <button
+                  class="objective-activity__feedback-close"
+                  type="button"
+                  data-objective-feedback-close
+                  aria-label="Fechar mensagem de feedback"
+                >
+                  ×
+                </button>
+              </div>
+            </article>
           </section>
 
           <section class="faq-section">
-            <div class="container">
-              <header class="faq-section__header">
-                <h2 class="faq-section__title">Perguntas frequentes</h2>
+            <header class="faq-section__header">
+              <h2 class="faq-section__title">Perguntas frequentes</h2>
 
-                <p class="faq-section__description">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </header>
+              <p class="faq-section__description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </header>
 
-              <div class="accordion" data-accordion>
-                <article class="accordion__item">
-                  <h3 class="accordion__heading">
-                    <button
-                      class="accordion__button"
-                      type="button"
-                      aria-expanded="false"
-                      aria-controls="faq-answer-1"
-                      id="faq-question-1"
-                    >
-                      <span class="accordion__question">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </span>
-
-                      <span class="accordion__icon" aria-hidden="true">
-                        <svg
-                          viewBox="0 0 24 24"
-                          width="18"
-                          height="18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7 10L12 15L17 10"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h3>
-
-                  <div
-                    class="accordion__content"
-                    id="faq-answer-1"
-                    role="region"
-                    aria-labelledby="faq-question-1"
+            <div class="accordion" data-accordion>
+              <article class="accordion__item">
+                <h3 class="accordion__heading">
+                  <button
+                    class="accordion__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-1"
+                    id="faq-question-1"
                   >
-                    <div class="accordion__content-inner">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content of a page when
-                        looking at its layout. The point of using Lorem Ipsum is
-                        that it has a more-or-less normal distribution of
-                        letters, as opposed to using “Content here, content
-                        here”, making it look like readable English.
-                      </p>
-                    </div>
+                    <span class="accordion__question">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+
+                    <span class="accordion__icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div
+                  class="accordion__content"
+                  id="faq-answer-1"
+                  role="region"
+                  aria-labelledby="faq-question-1"
+                >
+                  <div class="accordion__content-inner">
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more-or-less normal distribution of letters, as
+                      opposed to using “Content here, content here”, making it
+                      look like readable English.
+                    </p>
                   </div>
-                </article>
+                </div>
+              </article>
 
-                <article class="accordion__item">
-                  <h3 class="accordion__heading">
-                    <button
-                      class="accordion__button"
-                      type="button"
-                      aria-expanded="false"
-                      aria-controls="faq-answer-2"
-                      id="faq-question-2"
-                    >
-                      <span class="accordion__question">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </span>
-
-                      <span class="accordion__icon" aria-hidden="true">
-                        <svg
-                          viewBox="0 0 24 24"
-                          width="18"
-                          height="18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7 10L12 15L17 10"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h3>
-
-                  <div
-                    class="accordion__content"
-                    id="faq-answer-2"
-                    role="region"
-                    aria-labelledby="faq-question-2"
-                    hidden
+              <article class="accordion__item">
+                <h3 class="accordion__heading">
+                  <button
+                    class="accordion__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-2"
+                    id="faq-question-2"
                   >
-                    <div class="accordion__content-inner">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reiciendis maiores exercitationem deserunt doloribus
-                        aspernatur, quasi repellendus iste optio.
-                      </p>
-                    </div>
+                    <span class="accordion__question">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+
+                    <span class="accordion__icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div
+                  class="accordion__content"
+                  id="faq-answer-2"
+                  role="region"
+                  aria-labelledby="faq-question-2"
+                  hidden
+                >
+                  <div class="accordion__content-inner">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis maiores exercitationem deserunt doloribus
+                      aspernatur, quasi repellendus iste optio.
+                    </p>
                   </div>
-                </article>
+                </div>
+              </article>
 
-                <article class="accordion__item">
-                  <h3 class="accordion__heading">
-                    <button
-                      class="accordion__button"
-                      type="button"
-                      aria-expanded="false"
-                      aria-controls="faq-answer-3"
-                      id="faq-question-3"
-                    >
-                      <span class="accordion__question">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </span>
-
-                      <span class="accordion__icon" aria-hidden="true">
-                        <svg
-                          viewBox="0 0 24 24"
-                          width="18"
-                          height="18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7 10L12 15L17 10"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h3>
-
-                  <div
-                    class="accordion__content"
-                    id="faq-answer-3"
-                    role="region"
-                    aria-labelledby="faq-question-3"
-                    hidden
+              <article class="accordion__item">
+                <h3 class="accordion__heading">
+                  <button
+                    class="accordion__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-3"
+                    id="faq-question-3"
                   >
-                    <div class="accordion__content-inner">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Totam quidem reprehenderit rem pariatur harum itaque
-                        distinctio necessitatibus.
-                      </p>
-                    </div>
+                    <span class="accordion__question">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+
+                    <span class="accordion__icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div
+                  class="accordion__content"
+                  id="faq-answer-3"
+                  role="region"
+                  aria-labelledby="faq-question-3"
+                  hidden
+                >
+                  <div class="accordion__content-inner">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Totam quidem reprehenderit rem pariatur harum itaque
+                      distinctio necessitatibus.
+                    </p>
                   </div>
-                </article>
+                </div>
+              </article>
 
-                <article class="accordion__item">
-                  <h3 class="accordion__heading">
-                    <button
-                      class="accordion__button"
-                      type="button"
-                      aria-expanded="false"
-                      aria-controls="faq-answer-4"
-                      id="faq-question-4"
-                    >
-                      <span class="accordion__question">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
-                      </span>
-
-                      <span class="accordion__icon" aria-hidden="true">
-                        <svg
-                          viewBox="0 0 24 24"
-                          width="18"
-                          height="18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M7 10L12 15L17 10"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                      </span>
-                    </button>
-                  </h3>
-
-                  <div
-                    class="accordion__content"
-                    id="faq-answer-4"
-                    role="region"
-                    aria-labelledby="faq-question-4"
-                    hidden
+              <article class="accordion__item">
+                <h3 class="accordion__heading">
+                  <button
+                    class="accordion__button"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-4"
+                    id="faq-question-4"
                   >
-                    <div class="accordion__content-inner">
-                      <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quasi explicabo velit distinctio architecto molestias
-                        omnis ipsam reprehenderit.
-                      </p>
-                    </div>
+                    <span class="accordion__question">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                    </span>
+
+                    <span class="accordion__icon" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="18"
+                        height="18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7 10L12 15L17 10"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </h3>
+
+                <div
+                  class="accordion__content"
+                  id="faq-answer-4"
+                  role="region"
+                  aria-labelledby="faq-question-4"
+                  hidden
+                >
+                  <div class="accordion__content-inner">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quasi explicabo velit distinctio architecto molestias
+                      omnis ipsam reprehenderit.
+                    </p>
                   </div>
-                </article>
-              </div>
+                </div>
+              </article>
             </div>
           </section>
         </div>
