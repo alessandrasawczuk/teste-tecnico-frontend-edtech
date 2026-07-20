@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+  .container {
+    padding-inline: 32px;
+  }
+
   .content-section {
     padding-block: 56px 64px;
   }
@@ -104,24 +108,6 @@
   }
 }
 
-:root {
-  --color-primary: #73bf00;
-  --color-primary-hover: #87d500;
-
-  --color-black: #0c0b0a;
-  --color-dark: #151713;
-  --color-white: #ffffff;
-
-  --color-text-light: #c5c8bf;
-
-  --container-width: 1120px;
-
-  --radius-small: 6px;
-  --radius-medium: 12px;
-
-  --transition-fast: 160ms ease;
-}
-
 @media (max-width: 1500px) {
   .hero__container {
     width: min(calc(100% - 64px), 1180px);
@@ -139,24 +125,6 @@
 
   .browser {
     width: min(100%, 540px);
-  }
-}
-
-@media (max-width: 850px) {
-  .hero__container {
-    grid-template-columns: 1fr;
-    align-content: center;
-    gap: clamp(32px, 6vh, 50px);
-
-    padding-block: clamp(48px, 7vh, 70px);
-  }
-
-  .hero__content {
-    max-width: 650px;
-  }
-
-  .browser {
-    margin-inline: auto;
   }
 }
 
@@ -179,10 +147,6 @@
 }
 
 @media (max-width: 600px) {
-  .container {
-    width: min(calc(100% - 32px), var(--container-width));
-  }
-
   .hero {
     min-height: 100vh;
     min-height: 100svh;
@@ -262,6 +226,10 @@
 }
 
 @media (max-width: 480px) {
+  .container {
+    padding-inline: 16px;
+  }
+
   .section-heading {
     margin-bottom: 28px;
   }
@@ -421,7 +389,7 @@
   }
 
   .accordion__item {
-    border-radius: 10px;
+    border-radius: var(--radius-large);
   }
 
   .accordion__button {

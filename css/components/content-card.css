@@ -1,0 +1,46 @@
+/* ====================== CONTENT CARD ====================== */
+
+.content-card {
+  padding: 28px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 30px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  background-color: var(--white);
+
+  box-shadow: var(--shadow-card);
+}
+
+.content-card__image {
+  overflow: hidden;
+
+  border-radius: var(--radius-small);
+}
+
+.content-card__image img {
+  width: 100%;
+  height: 255px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.content-card__text {
+  display: grid;
+  gap: 16px;
+}
+
+.content-card__text p {
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  font-size: 0.92rem;
+  line-height: 1.65;
+}

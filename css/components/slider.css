@@ -1,0 +1,132 @@
+.slider {
+  margin-top: 48px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  background-color: var(--white);
+
+  box-shadow: var(--shadow-card);
+}
+
+.slider__viewport {
+  overflow: hidden;
+}
+
+.slider__track {
+  display: flex;
+
+  transition: transform 400ms ease;
+}
+
+.slider__slide {
+  flex: 0 0 100%;
+  margin: 0;
+}
+
+.slider__slide img {
+  width: 100%;
+  height: 470px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.slider__controls {
+  min-height: 74px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.slider__button {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-medium);
+
+  color: var(--color-text);
+  background-color: var(--white);
+
+  font: inherit;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+
+  transition:
+    color var(--transition-fast),
+    border-color var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.slider__button:hover:not(:disabled) {
+  color: var(--white);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+
+  transform: translateY(-2px);
+}
+
+.slider__button--next {
+  color: var(--white);
+  background-color: #202532;
+}
+
+.slider__button:disabled {
+  color: #aeb3ba;
+  border-color: #e5e7ea;
+  background-color: #f6f7f8;
+
+  cursor: not-allowed;
+  opacity: 0.65;
+
+  transform: none;
+}
+
+.slider__button:focus-visible,
+.slider__indicator:focus-visible {
+  outline: 3px solid rgba(115, 191, 0, 0.4);
+  outline-offset: 3px;
+}
+
+.slider__indicators {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider__indicator {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: #dfe3e8;
+
+  cursor: pointer;
+
+  transition:
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.slider__indicator:hover {
+  background-color: var(--color-primary);
+  transform: scale(1.15);
+}
+
+.slider__indicator.is-active {
+  background-color: #202532;
+}
