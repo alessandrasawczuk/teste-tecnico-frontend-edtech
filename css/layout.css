@@ -14,11 +14,10 @@
 }
 
 .section-heading {
-  margin-bottom: 36px;
+  margin-bottom: 32px;
 }
 
 .section-heading__title {
-  max-width: 760px;
   margin: 0 0 12px;
 
   color: var(--color-text);
@@ -26,15 +25,15 @@
   font-size: clamp(1.8rem, 3.2vw, 2.6rem);
   line-height: 1.08;
   letter-spacing: -0.04em;
+  font-weight: 900;
 }
 
 .section-heading__description {
-  max-width: 780px;
   margin: 0;
 
   color: var(--color-text-muted);
 
-  font-size: 0.95rem;
+  font-size: 1.125rem;
   line-height: 1.6;
 }
 
@@ -72,7 +71,7 @@
 /* ====================== CONTEÚDO HIGHLIGHT ====================== */
 .content-highlight {
   max-width: 850px;
-  margin: 64px auto 0;
+  margin: 0 auto 64px;
   padding: 32px;
 
   border-radius: 7px;

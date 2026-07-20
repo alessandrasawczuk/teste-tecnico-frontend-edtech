@@ -1,6 +1,7 @@
 /* ====================== CONTENT CARD ====================== */
 
 .content-card {
+  margin-bottom: 64px;
   padding: 28px;
 
   display: grid;

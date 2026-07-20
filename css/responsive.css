@@ -161,7 +161,7 @@
     align-content: center;
     gap: clamp(28px, 5vh, 40px);
 
-    padding: 32px 0;
+    padding: 32px 16px;
   }
 
   .hero__content {
@@ -227,7 +227,7 @@
 
 @media (max-width: 480px) {
   .container {
-    padding-inline: 16px;
+    padding-inline: 32px;
   }
 
   .section-heading {
@@ -264,10 +264,6 @@
     height: 36px;
   }
 
-  .expandable-cards-section {
-    padding: 32px 0 48px;
-  }
-
   .expandable-card {
     min-height: 200px;
     padding: 28px 22px 22px;
@@ -302,10 +298,6 @@
     grid-row: 1;
   }
 
-  .discursive-section {
-    padding: 32px 0 56px;
-  }
-
   .discursive-activity {
     padding: 24px 18px;
   }
@@ -333,10 +325,6 @@
 
   .discursive-activity__feedback {
     gap: 10px;
-  }
-
-  .objective-section {
-    padding-bottom: 56px;
   }
 
   .objective-activity {

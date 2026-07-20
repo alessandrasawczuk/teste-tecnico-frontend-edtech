@@ -116,7 +116,7 @@
 
 /* ====================== ATIVIDADE DISCURSIVA ====================== */
 .discursive-section {
-  padding: 42px 0 80px;
+  padding-bottom: 64px;
 }
 
 .discursive-activity__description {
@@ -228,7 +228,7 @@
 
 /* ====================== ATIVIDADE OBJETIVA ====================== */
 .objective-section {
-  padding: 0 0 80px;
+  padding-bottom: 64px;
 }
 
 .objective-activity__options {
