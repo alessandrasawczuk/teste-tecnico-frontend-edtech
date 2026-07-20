@@ -244,6 +244,21 @@
   .hero__decoration--right {
     right: -50px;
   }
+
+  .button {
+    min-width: 150px;
+    min-height: 56px;
+    padding: 14px 24px;
+
+    font-size: 1.25rem;
+  }
+
+  .button--primary {
+    min-width: auto;
+    min-height: 46px;
+
+    font-size: 0.875rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -348,11 +363,6 @@
     align-items: stretch;
   }
 
-  .discursive-activity__button {
-    flex: 1;
-    min-width: 0;
-  }
-
   .discursive-activity__feedback {
     gap: 10px;
   }
@@ -391,11 +401,6 @@
 
   .objective-activity__actions {
     align-items: stretch;
-  }
-
-  .objective-activity__button {
-    flex: 1;
-    min-width: 0;
   }
 
   .objective-activity__feedback {

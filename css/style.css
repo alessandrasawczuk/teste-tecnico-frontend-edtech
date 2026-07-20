@@ -265,33 +265,95 @@ body {
   min-height: 0;
 }
 
-.button {
+/* Hover */
+.button:hover:not(:disabled) {
+  color: #ffffff;
+  background-color: var(--color-primary);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 20px rgba(101, 185, 0, 0.25);
+}
+
+/* Clique */
+.button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Foco pelo teclado */
+.button:focus-visible {
+  outline: 3px solid rgba(101, 185, 0, 0.4);
+  outline-offset: 4px;
+}
+
+/* Desabilitado */
+.button:disabled,
+.button[aria-disabled="true"] {
+  color: rgba(156, 163, 175, 1);
+  background-color: #f3f4f6;
+
+  cursor: not-allowed;
+  pointer-events: none;
+
+  box-shadow: none;
+  transform: none;
+}
+
+.button--primary {
+  min-width: auto;
   min-height: 48px;
   padding-inline: 22px;
 
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+  color: #101508;
+  background-color: var(--color-primary);
 
-  border: 0;
-  border-radius: var(--radius-small);
-
+  font-size: 1rem;
   font-weight: 700;
-  text-decoration: none;
+
+  box-shadow: 0 0 28px rgba(115, 191, 0, 0.28);
+}
+
+.button--primary:hover:not(:disabled) {
+  color: #101508;
+  background-color: var(--color-primary-hover);
+}
+
+.button {
+  min-width: 98px;
+  min-height: 42px;
+  padding: 10px 18px;
+
+  color: #ffffff;
+  background-color: #0d0b09;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  font: inherit;
+  font-size: 0.8125rem;
+  font-weight: 600;
 
   cursor: pointer;
 
   transition:
-    background-color var(--transition-fast),
-    transform var(--transition-fast),
-    box-shadow var(--transition-fast);
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
 }
 
 .button--primary {
   color: #101508;
   background-color: var(--color-primary);
   box-shadow: 0 0 28px rgba(115, 191, 0, 0.28);
+
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  padding: 16px 28px;
 }
 
 .button--primary:hover {
@@ -1052,63 +1114,6 @@ body {
   margin-bottom: 20px;
 }
 
-.discursive-activity__button {
-  min-width: 98px;
-  min-height: 42px;
-  padding: 10px 18px;
-
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  font: inherit;
-  font-size: 0.8125rem;
-  font-weight: 500;
-
-  cursor: pointer;
-
-  transition:
-    color 180ms ease,
-    border-color 180ms ease,
-    background-color 180ms ease,
-    transform 180ms ease;
-}
-
-.discursive-activity__button--submit {
-  color: #ffffff;
-  background-color: #65b900;
-}
-
-.discursive-activity__button--submit:hover:not(:disabled) {
-  background-color: #559d00;
-
-  transform: translateY(-1px);
-}
-
-.discursive-activity__button--edit {
-  color: #ffffff;
-  background-color: #0d0b09;
-}
-
-.discursive-activity__button--edit:hover:not(:disabled) {
-  background-color: #292522;
-
-  transform: translateY(-1px);
-}
-
-.discursive-activity__button:disabled {
-  color: #a6afbc;
-  background-color: #f0f2f5;
-
-  cursor: not-allowed;
-  opacity: 1;
-}
-
-.discursive-activity__button:focus-visible,
-.discursive-activity__feedback-close:focus-visible {
-  outline: 3px solid rgba(101, 185, 0, 0.35);
-  outline-offset: 3px;
-}
-
 .discursive-activity__feedback {
   padding: 16px 18px;
 
@@ -1341,59 +1346,6 @@ body {
   gap: 14px;
 
   margin-bottom: 34px;
-}
-
-.objective-activity__button {
-  min-width: 108px;
-  min-height: 48px;
-  padding: 11px 20px;
-
-  border: 1px solid transparent;
-  border-radius: 4px;
-
-  font: inherit;
-  font-size: 0.875rem;
-  font-weight: 500;
-
-  cursor: pointer;
-
-  transition:
-    color 180ms ease,
-    background-color 180ms ease,
-    transform 180ms ease;
-}
-
-.objective-activity__button--submit {
-  color: #ffffff;
-  background-color: #65b900;
-}
-
-.objective-activity__button--submit:hover:not(:disabled) {
-  background-color: #559d00;
-  transform: translateY(-1px);
-}
-
-.objective-activity__button--edit {
-  color: #ffffff;
-  background-color: #0d0b09;
-}
-
-.objective-activity__button--edit:hover:not(:disabled) {
-  background-color: #292522;
-  transform: translateY(-1px);
-}
-
-.objective-activity__button:disabled {
-  color: #a6afbc;
-  background-color: #f0f2f5;
-
-  cursor: not-allowed;
-}
-
-.objective-activity__button:focus-visible,
-.objective-activity__feedback-close:focus-visible {
-  outline: 3px solid rgba(101, 185, 0, 0.35);
-  outline-offset: 3px;
 }
 
 .objective-activity__feedback {
